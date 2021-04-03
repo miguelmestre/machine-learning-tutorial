@@ -8,7 +8,7 @@ from matplotlib import style
 import pickle
 
 
-data =  pd.read_csv('Linear Regression/student-mat.csv', sep=';')
+data =  pd.read_csv('student-mat.csv', sep=';')
 
 data = data[["G1", "G2", "G3", "studytime", "failures", "absences"]]
 
@@ -36,7 +36,7 @@ for _ in range(30):
         with open("studentmodel.pickle", "wb") as f:
             pickle.dump(linear, f)"""
 
-pickle_in = open("Linear Regression/studentmodel.pickle", "rb")
+pickle_in = open("studentmodel.pickle", "rb")
 linear = pickle.load(pickle_in )
 
 print("Coeficient:" , linear.coef_)
