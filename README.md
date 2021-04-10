@@ -15,3 +15,4 @@ This is a machine learning tutorial based on "Tech With Tim" YouTube series
 
 - Linear Regression
 - KNN (k-nearest neighbors)
+- SVM (Support-vector Machine)
